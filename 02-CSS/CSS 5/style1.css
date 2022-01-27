@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(236, 240, 27);
+}
+.number1{
+    margin-top: 100px;
+    font-size: 15px;
+}
+.class1{
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.skew-30deg{
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+    animation: skew30-animation 4s infinite;
+    animation-delay: 0s;
+}
+.skew-60deg{
+    background-color:#916BBF;
+    width: 100px;
+    height: 100px;
+    animation: skew60-animation 4s infinite;
+    animation-delay: 0s;
+}
+.rotate{
+    background-color:slateblue;
+    width: 100px;
+    height: 100px;
+    animation: rotate-animation 2s infinite;
+    animation-delay: 0s;
+}
+.scaley{
+    border: 2px solid blueviolet;
+    background-color: slateblue;
+    width: 100px;
+    height: 100px;
+    animation: scaley-animation 3s infinite;
+    animation-delay: 0s;
+}
+.scalex{
+    border: 2px solid rgb(145, 90, 65); 
+    background-color: maroon;
+    width: 100px;
+    height: 100px;
+    animation: scalex-animation 3s infinite;
+    animation-delay: 0s;
+}
+.rotate-90{
+    border: 2px solid rgb(120, 163, 50);
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    animation: rotate90-animation 3s infinite;
+    animation-delay: 1s;
+}
+.number2{
+    margin-bottom: 80px;
+    font-size: 15px;
+}
+.class2{
+    margin-top: 10px;
+    margin-left: 46%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.sub{
+    width: 100px;
+    height: 100px;
+    background-color:forestgreen;
+    transition: width 2s ease-in;
+}
+.sub:hover{
+    width: 300px;
+}
+.sub1{
+    width: 100px;
+    height: 130px;
+    background-color: forestgreen;
+    transition: width 2s ease-in,height 2s ease-in;
+}
+.sub1:hover{
+    width: 300px;
+    height: 300px;
+}
+.sub2{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    transition: width 2s ease-in-out;
+}
+.sub2:hover{
+    width: 300px;
+}
+.sub3{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    transition: width 2s ease-out;
+}
+.sub3:hover{
+    width: 300px;
+}
+.sub4{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    transition: width 2s linear;
+}
+.sub4:hover{
+    width: 300px;
+}
+.sub5{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    transition: width 2s ease;
+}
+.sub5:hover{
+    width: 300px;
+}
+.sub6{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    transition: width 2s cubic-bezier(.52,.16,1,.4);
+}
+.sub6:hover{
+    width: 300px;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: red;
+}
+
+
+@keyframes skew30-animation {
+    0%{
+        transform: skewx(-30deg); 
+    }
+    50%{
+        transform: skewx(30deg);
+    }
+    100%{
+        transform: skewx(-30deg);
+    }
+}
+@keyframes skew60-animation {
+    0%{
+        transform: skewy(-20deg); 
+    }
+    50%{
+        transform: skewy(20deg);
+    }
+    100%{
+        transform: skewy(-20deg);
+    }
+}
+@keyframes rotate-animation {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes scaley-animation {
+    50%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+@keyframes scalex-animation {
+    50%{
+        transform: scaleX(0.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+@keyframes rotate90-animation {
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
