@@ -2,7 +2,7 @@
 
 **Hands-On-Host-URL**
 
-**1. HTML Assessment""
+**1. HTML Assessment**
 
 HTML 1 (Link) - https://chetanbhoyar22.github.io/PB-Hands-On-Work/01-HTML/HTML%201/index.html
 
